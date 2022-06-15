@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { deletePostDispatched } from '../posts/deletePostSlice';
-import {AiFillDelete} from 'react-icons/ai'
 import {deletePostConfirm} from '../posts/postsSlice';
 
 const PostsList = () => {
