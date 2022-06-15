@@ -1,0 +1,48 @@
+
+.headerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #032047;
+
+}
+
+.headerTitle {
+    color: #FB8500;
+    margin: 20px 60px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.addButton {
+    background-color: #77dd77;
+    padding: 10px 11px;
+    margin:20px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addButton:hover {
+    background-color: #b6e9b6;
+    transition: 0.5s;
+
+}
+.addIcon  path{
+    stroke: rgb(0, 0, 0);
+}
+.deleteButton {
+    background-color: #FF0000;
+    padding: 10px 11px;
+    margin:20px 30px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.deleteButton:hover {
+    background-color: #ec9595;
+    transition: 0.5s;
+
+}
+

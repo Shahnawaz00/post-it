@@ -1,0 +1,101 @@
+/* apply on page load  */
+.closeAddPageInit{
+    display: none;
+}
+/* apply when page is inactive  */
+.closeAddPage {
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    max-width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFB703;
+    margin: 5% 40%;
+    padding:40px 50px ;
+    animation: scale-out-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* apply when page is active  */
+.openAddPage {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    position: fixed;
+    max-width: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFB703;
+    margin: 5% 40%;
+    padding:40px 50px ;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* top part  */
+.addPageHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+/* close button  */
+.addPageCloseBtn {
+  border: none;
+  background-color: #FFB703;
+  color: grey;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* form styles  */
+.addForm {
+    display: flex;
+    flex-direction: column;
+}
+/* input styles  */
+.addFormInputs {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #efe0b8;
+    border: none;
+    border-radius: 10px;
+}
+.addFormInputs:focus {
+    outline: none;
+}
+/* submit button  */
+.addFormBtn {
+    border: none;
+    padding: 10px 0;
+    background-color: #77dd77;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.addFormBtn:hover {
+  background-color: #b6e9b6 ;
+  transition: 0.5s;
+}
+
+
+
+/* keyframes  */
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-out-center {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 1;
+    }
+  }
+  
+  
