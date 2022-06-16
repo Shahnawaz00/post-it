@@ -45,7 +45,7 @@ const Header = () => {
             </h1>
         </header>
         {/* buttons */}
-        <div>
+        <div c >
             <button className='addButton' onClick={openAddPage} >
                 <GrAdd size={24} className='addIcon'/>
             </button>

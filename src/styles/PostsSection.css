@@ -1,22 +1,38 @@
+
 .postsSection {
     display: flex;
+    flex-wrap: wrap;
     margin: 40px;
+
 }
 .eachPost {
     margin: 20px;
     padding: 20px;
-    background-color: #FB8500 ;
+    background-color: #f4b266 ;
     border: none;
     border-radius: 10px;
     max-width: 100%;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+@media (max-width:900px) {
+  .postsSection {
+    margin: 10px;
+  }
+  .eachPost {
+    margin: 10px;
+    padding: 10px;
+  }
+}
 .eachPost p, .eachPost h3{
   background-color: #f4b266;
+  color: #3a2002;
   border:none ;
   border-radius: 10px;
   padding: 5px 10px;
   margin-bottom: 10px;
+}
+.eachPost p {
+  color:#743f02 ;
 }
 /* delete each post  */
 .deletePostBtn path{
@@ -61,6 +77,7 @@
 .deleteBtnSection {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: #032047;
   animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

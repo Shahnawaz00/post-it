@@ -8,7 +8,7 @@ const PostsList = () => {
   const dispatch = useDispatch()
   const posts = useSelector(state => state.posts)
   const deletePost = useSelector(state => state.deletePost)
-
+  
   // checkbox checked array 
   const [checkedArray, setCheckedArray] = useState([]);
 
@@ -59,20 +59,8 @@ const PostsList = () => {
         )
     }
    }
-  // render posts 
+ 
 
-  const renderedPosts = posts.map(post => (
-    <div className={deletePost.value? 'eachPost shake' : 'eachPost'} key={post.id}>
-      <h3>{post.name}</h3>
-      <p> {post.description} </p>
-      <div className={deletePost.value? 'showCheckbox' : 'hideCheckbox'} >
-        <label className='checkboxLabel'>
-          <input className='eachPostCheckbox' type="checkbox" id={post.id} onClick={checkBoxClick}  />
-          <span className="newCheckbox"></span>
-        </label>
-      </div>
-    </div>
-  ))
 
   return (
     <div >
@@ -86,7 +74,18 @@ const PostsList = () => {
       </div>
       
       <div className="postsSection"  >
-      {renderedPosts}
+      { posts.map(post => (
+            <div className={deletePost.value? 'eachPost shake' : 'eachPost'} key={post.id}>
+              <h3>{post.name}</h3>
+              <p> {post.description} </p>
+              <div className={deletePost.value? 'showCheckbox' : 'hideCheckbox'} >
+                <label className='checkboxLabel'>
+                  <input className='eachPostCheckbox' type="checkbox" id={post.id} onClick={checkBoxClick}  />
+                  <span className="newCheckbox"></span>
+                </label>
+              </div>
+            </div>
+        )) }
       </div>
       
     </div>

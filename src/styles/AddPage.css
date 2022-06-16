@@ -10,7 +10,7 @@
     max-width: 100%;
     border: none;
     border-radius: 30px;
-    background-color: #FFB703;
+    background-color: #FB8500;
     margin: 5% 40%;
     padding:40px 50px ;
     animation: scale-out-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -24,10 +24,17 @@
     max-width: 100%;
     border: none;
     border-radius: 30px;
-    background-color: #FFB703;
+    background-color: #FB8500;
     margin: 5% 40%;
     padding:40px 50px ;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@media (max-width:700px) {
+  .openAddPage {
+    margin: 10%;
+    padding: 30px ;
+    max-width: 80%;
+  }
 }
 /* top part  */
 .addPageHeader {
@@ -39,7 +46,7 @@
 /* close button  */
 .addPageCloseBtn {
   border: none;
-  background-color: #FFB703;
+  background-color: #FB8500;
   color: grey;
   cursor: pointer;
   font-size: 16px;
